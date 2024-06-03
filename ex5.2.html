@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>exercicio 5.2: apresentar os caracteres de uma string  e suas posiçoes,lendo uma frase do teclado.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var frase=window.prompt("digite uma frase:");
+    document.write(frase +"<br>");
+    tamanho=frase.length;
+    for (var i=0; i<tamanho;)
+    {
+        document.write ("<br>caractere na posição"+i+" : " + frase.charAt(i));
+        i++;
+    }
+document.write("<br><br>primeiro caractere:"+ frase.charAt(0)+"<br/>");
+document.write("ultimo caractere:"+frase.charAt(frase.length-1));
+/*
+o metodo charAt() retorna o caractere da posição especificada da string (do indice especificado).
+*/
+</script>
+</body>
+</html>

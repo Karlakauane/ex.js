@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function soma ()
+        {
+            x=eval (document.prova.cl.value)+eval(document.prova.c2.value)+eval(document.prova.c3.value); 
+            document.prova.c4.value=x;
+        }
+        function multiplica ()
+        {
+            y=eval (document.prova.cl.value)*eval(document.prova.c2.value)*eval(document.prova.c3.value); 
+            document.prova.c4.value=y;
+        }
+    </script>
+    <form>
+        valor1:<input type="text"name="c1" value="" size=5 maxlength=5><br>
+        valor2:<input type="text"name="c2" value="" size=5 maxlength=5><br>
+        valor3:<input type="text"name="c3" value="" size=5 maxlength=5><br>
+        <br>
+        <input type="button" value="somar" onclick="soma()">
+        <input type="button" value="multiplicar" onclick="multiplica()">
+        <br><br>
+        reposta:<input type="text" name="c4" value="" size="10" maxlength=0>
+
+    </form>
+</body>
+</html>
